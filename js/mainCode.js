@@ -87,20 +87,16 @@ function chargeArwing() {
 
 function onKeyDown(event) {
     switch (event.keyCode) {
-
-        case 87: // w
+        case 87:
             front = true;
             break;
-
-        case 65: // a
+        case 65: 
             left = true;
             break;
-
-        case 83: // s
+        case 83: 
             back = true;
             break;
-
-        case 68: // d
+        case 68: 
             right = true;
             break;
         case 80:
@@ -111,17 +107,17 @@ function onKeyDown(event) {
 
 function onKeyUp(event) {
     switch (event.keyCode) {
-        case 87: // w
+        case 87:
             front = false;
             break;
-        case 65: // a
+        case 65:
             left = false;
             break;
-        case 83: // s
+        case 83:
             back = false;
             break;
 
-        case 68: // d
+        case 68:
             right = false;
             break;
 
