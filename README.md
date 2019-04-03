@@ -1,29 +1,22 @@
-# A6: Not Star Fox
+# A5: Robot Rush
 
-Assignment No 6 for the computer graphics course.
+Assignment No 5 for the computer graphics course.
 
-Based on the Class demos, create a [Star Fox](https://en.wikipedia.org/wiki/Star_Fox) style game. An example can be seen [here](https://www.youtube.com/watch?v=AvT8SdZ5zf8).
+Based on the Class demos, create a 3D [zerg rush](https://elgoog.im/zergrush/) style game: 
 
-The game must have the following:
-
-- Load a 3D space ship. 
-- The space ship can move in any direction except forward or backward.
-- The ship must have life points.
-- The ship must be able to shoot lasers. 
-- There must be obstacles that the ship has to avoid. If the ship hits any of them, the life looses a set amount of life points. Load a 3D model for the obstacles.
-- There must also be some objects that the ship is able to destroy. When one of such objects is destroyed, you gain a set amount of points. Load a 3D model for these objects.
-- The obstacles and the destroyable object move towards the space ship indefinitely. When they reach a set point of the level, they are destroyed.
-- The game ends when the ship has no life left, or when a set amount of time has passed.
-- A score, and high score, must be recorded.
-- Create a simple user interface, using html and css, to show the ship's life, score, timer, start and restart the game.
+- Robots spawn at the end of the level, and start walking towards a fixed position where the camera is positioned. You have to click the robots to kill them before they reach that point. 
+- If you kill a robot, you gain one point. If the robot gets to the position, you loose one point. 
+- Create a new dead animation for the robot using keyframes.
+- The game must have a score, and a timer. When the timer ends, the game stops and an option to restart is given.
+- Spawn only a fixed amount of robots. When a robot is destroyed, spawn a new one.
+- Create a simple user interface using html and css to start and restar the game.
 
 **Rubric:**
 
 - The game was created as specified.
-- Objects have bounding boxes, and are correctly handled according to the game's description.
-- 3D models are loaded for the ship and scene objects.
-- The ship correctly interacts with the environment as instructed.
+- Created a dead animation for the model using keyframes and existing animations.
+- The user could interact correctly with the 3D model, and when an interaction happens, the dead animation is played. The model is then erased from the scene after a little while.
 - A high score and timer were correctly implemented.
-- UI was correctly displayed.
+- UI feedback messages (to start or restart the game) were correctly displayed.
 
-**Deadline:** 29/03/2019
+**Deadline:** 15/03/2019
